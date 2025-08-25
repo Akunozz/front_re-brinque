@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import logo from "@/assets/logo.svg";
 
 export default function HomePage() {
   return (
     <div className="bg-zinc-100 min-h-screen flex flex-col">
       {/* Conteúdo principal */}
       <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
-        <div className="w-32 h-32 bg-zinc-300 mx-auto rounded-full flex items-center justify-center">
-          <Image src="" width={80} height={80} alt="Logo re.Brinque" />
+        <div className="w-50 h-50 bg-zinc-300 mx-auto rounded-full flex items-center justify-center">
+          <Image src={logo} width={300} height={300} alt="Logo re.Brinque" />
         </div>
 
         <div className="space-y-2 mt-6">
